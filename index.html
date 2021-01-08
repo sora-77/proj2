@@ -42,7 +42,7 @@
                 <div class="nav__top-right">
                     <div class="nav__primary--sub">
                         <ul id="list1">
-                            <li><a href="#">공연안내</a></li>
+                            <li><a href="sub.html" class="active">공연안내</a></li>
                             <li><a href="#">전시안내</a></li>
                             <li><a href="#">축제안내</a></li>
                             <li><a href="#">좌석배치도</a></li>
@@ -76,15 +76,16 @@
                         </ul>
                     </div>
                     <ul class="nav__secondary-menu">
-                        <li><a href="#">Log-in</a></li>
-                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Sign-in</a></li>
+                        <li><a href="#">Sign-up</a></li>
                         <li><a href="#">My page</a></li>
+                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="nav__bottom">
                 <div class="nav__sns">
-                    <span>SNS</span>
+                    <span>SOCIAL</span>
                     <ul class="nav__sns--icon">
                         <li><svg>
                             <a href="#"><use xlink:href="image/sprite2.svg#icon-facebook"></use></a>
@@ -114,7 +115,7 @@
         
         <header id="header">
             <div class="logo-box">
-                <img src="image/logo.png" alt="충무아트센터 로고">
+                <a href="index.html"><img src="image/logo.png" alt="충무아트센터 로고"></a>
             </div>
             <div class="menu">
                 <button class="btn menu-btn">
@@ -127,8 +128,8 @@
                     <span></span>
                  </div>
                  <ul class="quickmenu__list">
-                     <li><a href="#">Log-in</a></li>
-                     <li><a href="#">Join</a></li>
+                     <li><a href="#">Sign-in</a></li>
+                     <li><a href="#">Sign-up</a></li>
                      <li><a href="#">FAQ</a></li>
                  </ul>
              </div>
@@ -137,14 +138,14 @@
         <div class="inner-big">
             <section id="main">
                 <div class="main__sidebar">
-                    <div class="arrow-box">
+                    <!--<div class="arrow-box">
                         <div class="main__arrow-left arrow">
                             <a href="#" class="btn_slides_prev off">&larr;</a>
                         </div>
                         <div class="main__arrow-right arrow">
                             <a href="#" class="btn_slides_next">&rarr;</a>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="sidebar-menu">
                         <input class="search-checkbox" type="checkbox" id="search-icon"> 
                         <label for="search-icon" class="search-label">
@@ -182,29 +183,29 @@
                     </footer>
                 </div>
                 <div class="main__slide">
-                    <div class="slide-top">
-                        <ul class="main__slide-tab">
-                            <li><a phref="#slide-name1" class="active" img-left="0px">1</a></li>
-                            <li><a phref="#slide-name2" img-left="-1537px">2</a></li>
-                        </ul>
-                        <div class="main__slide-name" id="slide-name1">
-                            <span class="slide-type">뮤지컬</span>
-                            <span class="slide-title">그날들</span>
-                        </div>
-                        <div class="main__slide-name" id="slide-name2">
-                            <span class="slide-type">전시</span>
-                            <span class="slide-title">TAG PROJECT</span>
-                        </div>
-                    </div>
                     <div class="slide-box">
-                        <ul class="slide-image">
-                            <li><img src="image/cac_mainbanner1.jpg" alt="뮤지컬 그날들 배너"></li>
-                            <li><img src="image/cac_mainbanner2.jpg" alt="전시 태그 프로젝트"></li>
-                        </ul>
+                        <section class="lazy slider slide-image" data-sizes="50vw">    
+                            <div>
+                                <div class="main__slide-name" id="slide-name2">
+                                    <span class="slide-type">뮤지컬</span>
+                                    <span class="slide-title">그날들</span>
+                                </div>
+                                <img src="image/cac_mainbanner1.jpg" alt="뮤지컬 그날들 배너">
+                            </div>
+                            <div>
+                                <div class="main__slide-name" id="slide-name2">
+                                    <span class="slide-type">전시</span>
+                                    <span class="slide-title">TAG PROJECT</span>
+                                </div>
+                                <img src="image/cac_mainbanner2.jpg" alt="전시 태그 프로젝트">
+                            </div>
+                        </section>
                     </div>
-                    <div class="btn-box ticketing-btn">
-                        <button class="redbox"><a>예매하기</a></button>
-                    </div>
+                    <a href="sub.html">
+                        <div class="btn-box ticketing-btn">
+                            <button class="redbox"><span>예매하기</span></button>
+                        </div>
+                    </a>
                 </div>
             </section>
         </div>    
@@ -233,50 +234,7 @@
                 </div>
                 <img src="image/cac_perform1-1.jpg" alt="">
               </div>
-          </section>
-          <!--
-            <section id="showing">
-             
-                <ul class="showing__content">
-                    <li><a href="#">
-                        <div class="content-info">
-                            <div class="content-info__text-box">
-                                <div class="content-info__title">뮤지컬<br>위대한 개츠비</div>
-                                <div class="content-info__detail">
-                                    <span>충무아트센터 대극장</span>
-                                    <span>2021.02.07 ~ 2021.05.10</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="image/cac_perform2.jpg" alt="">
-                        
-                    </a></li>
-                    <li><a href="#">
-                        <div class="content-info">
-                            <div class="content-info__text-box">
-                                <div class="content-info__title">뮤지컬<br>위대한 개츠비</div>
-                                <div class="content-info__detail">
-                                    <span>충무아트센터 대극장</span>
-                                    <span>2021.02.07 ~ 2021.05.10</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="image/cac_perform1-1.jpg" alt="">
-
-                    </a></li>
-                </ul>
-            </section>
-                    <div class="arrow-box">
-                        <div class="showing__arrow-left arrow">
-                            <a class="btn_slides_prev off">&larr;</a>
-                        </div>
-                        <div class="showing__arrow-right arrow">
-                            <a class="btn_slides_next">&rarr;</a>
-                        </div>
-                    </div>
-                    <button class="showing__more-btn"><a href="#">All</a></button>-->
-                    
-            
+          </section>            
             <section id="guide">
                 <div class="inner">
                     <h2 class="section__title">
@@ -291,7 +249,7 @@
                     <div class="guide__content">
                         <div class="guide__content--detail">
                             <div class="seating-plan active article" id="article1">
-                                <img src="./image/seatingchart1.jpg" alt="" >
+                                <img src="./image/seatingchart1.png" alt="" >
                                 <img src="./image/seatingchart2.jpg" alt="">
                             </div>
                             <div class="floor-guide article" id="article2">
@@ -366,16 +324,37 @@
                                     </a></li>
                                 </ul>
                             </div>
-                            <div class="direction article" id="article3"></div>
-                            <div class="facility article" id="article4"></div>
+                            <div class="direction article" id="article3">
+                                <div class="direction__point">
+                                    <span>충무아트센터</span>
+                                    <button class="find"><span>길찾기</span></button>
+                                    <img src="./image/direction_polygon.png" alt="" class="direction__polygon">
+                                </div>
+                                <img src="./image/direction.jpg" alt="">
+                            </div>
+                            <div class="facility article" id="article4">
+                                <div class="playroom">
+                                    <img src="./image/playroom.jpg" alt="">
+                                    <div class="facility__tit">놀이방</div>
+                                </div>
+                                <div class="locker">
+                                    <img src="./image/locker.jpg" alt="">
+                                    <div class="facility__tit">물품보관소</div>
+                                </div>
+                                <div class="cafe">
+                                    <img src="./image/cafe.jpg" alt="">
+                                    <div class="facility__tit">카페 다디오</div>
+
+                                </div>
+                            </div>
                             </div>
                         <ul class="guide__tab">
                             <li class="seating-plan__title"><a phref="#article1" class="active">좌석배치도</a>
-                                <select name="location" id="location-select">
+                                <!--<select name="location" id="location-select">
                                     <option value="grand-theater">대극장</option>
                                     <option value="medium-theater">중극장 블랙</option>
                                     <option value="small-theater">소극장 블루</option>
-                                </select>
+                                </select>-->
                             </li>
                             <li><a phref="#article2">층별안내</a></li>
                             <li><a phref="#article3">오시는길</a></li>
@@ -430,6 +409,9 @@
                             </div>
                         </div>
                     </div>
+                    <button class="news__more-btn">
+                        <span>ALL</span>
+                    </button>
                 </div>
             </section>
             <section id="ask">
@@ -450,15 +432,15 @@
                                     02.2230.6600
                                 </div>
                                 <div class="ask__cscenter--operation">
-                                    <span>09:30~18:30(월~금) / 점심시간 12:00~13:00</span>
-                                    <span>주말 및 공휴일 휴무</span>
+                                    <span>09:30~18:30(월~금) / 점심시간 12:00~13:00
+                                    주말 및 공휴일 휴무</span>
                                 </div>
                                 <div class="btn-box ask-btn">
-                                    <button class="redbox"><a>문의하기</a></button>
+                                    <a><button class="redbox"><span>문의하기</span></button></a>
                                 </div>
                                 <div class="ask__sns">
                                     <div class="ask__sns--title">
-                                        SNS
+                                        SOCIAL
                                     </div>
                                     <ul class="ask__sns--icon">
                                         <li><svg>

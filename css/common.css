@@ -9,6 +9,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;900&display=swap");
 
 * {
   margin: 0;
@@ -68,6 +69,18 @@ button {
   display: block;
   text-indent: -9999999999999px;
 }
+
+#wrap {
+  min-width: 128rem;
+  width: 100%;
+  overflow: hidden;
+}
+.inner {
+  width: 128rem;
+  margin: 0 auto;
+
+  position: relative;
+}
 /*********************NAVIGATION*********************************/
 #navigation {
   width: 100vw;
@@ -83,177 +96,185 @@ button {
   overflow: hidden;
 }
 
-#navigation .nav__top {
-  height: 60%;
+.nav__top {
+  height: 55%;
   display: flex;
   width: 128rem;
   margin: 0 auto;
   margin-top: 17rem;
 }
 
-#navigation .nav__top-left {
+.nav__top-left {
   margin-right: auto;
+  width: 65%;
 }
 
-#navigation .nav__top-right {
+.nav__top-right {
   width: 30rem;
 }
 
-#navigation .nav__top-left::before,
-#navigation .nav__top-right::before,
-#navigation .nav__bottom::before {
+.nav__top-left::before,
+.nav__top-right::before,
+.nav__bottom::before {
   content: "";
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-base);
 }
 
-#navigation .nav__primary--title {
+.nav__primary--title {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
 
-#navigation .nav__primary--title li {
+.nav__primary--title li {
   margin-right: 5rem;
 }
 
-#navigation .nav__primary--title li:hover a {
+.nav__primary--title li:hover a {
   border-bottom: 2px solid currentColor;
 }
 
-#navigation .nav__primary--title a {
-  font-size: 5.8rem;
-  font-weight: 600;
+.nav__primary--title a {
+  font-size: 4rem;
+  font-weight: 500;
   line-height: 2em;
-  letter-spacing: -0.7rem;
+  letter-spacing: -0.5rem;
 }
 
-#navigation .nav__primary--title a.active {
+.nav__primary--title a.active {
   color: var(--color-accent);
 }
 
-#navigation .nav__primary--sub {
-  padding-top: 3rem;
+.nav__primary--sub {
+  padding-top: 2rem;
 }
 
-#navigation .nav__primary--sub ul {
+.nav__primary--sub ul {
   display: none;
-  height: 30rem;
+  height: 24rem;
 }
 
-#navigation .nav__primary--sub li {
-  font-size: 2.5rem;
-  line-height: 1.7em;
+.nav__primary--sub li {
+  font-size: 2rem;
+  line-height: 1.6em;
 }
-
-#navigation .nav__primary--sub li:hover a {
+.nav__primary--sub li:hover a {
   border-bottom: 1px solid currentColor;
 }
 
-#navigation .nav__primary--sub a {
-  font-size: 2.5rem;
-  font-weight: 400;
+.nav__primary--sub a.active {
+  border-bottom: 1px solid var(--color-base);
 }
 
-#navigation .nav__secondary-menu li {
+.nav__primary--sub a {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.nav__secondary-menu li {
   position: relative;
 }
 
-#navigation .nav__secondary-menu li::after {
+.nav__secondary-menu li::after {
   content: "\2192";
   display: block;
   font-size: 3rem;
   position: absolute;
-  top: 0;
+  top: -0.5rem;
   opacity: 0;
   transition: all 0.3s;
 }
 
-#navigation .nav__secondary-menu li:first-child:after {
+.nav__secondary-menu li:first-child:after {
+  right: 15rem;
+}
+
+.nav__secondary-menu li:nth-child(2):after {
   right: 14rem;
 }
 
-#navigation .nav__secondary-menu li:nth-child(2):after {
-  right: 18rem;
+.nav__secondary-menu li:nth-child(3):after {
+  right: 13rem;
 }
 
-#navigation .nav__secondary-menu li:nth-child(3):after {
-  right: 11rem;
+.nav__secondary-menu li:nth-child(4):after {
+  right: 7rem;
 }
 
-#navigation .nav__secondary-menu li:hover::after {
+.nav__secondary-menu li:hover::after {
   transform: translateX(8px);
   opacity: 1;
 }
 
-#navigation .nav__secondary-menu a {
-  font-size: 3rem;
+.nav__secondary-menu a {
+  font-size: 2.7rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-#navigation .nav__bottom {
-  height: 40%;
+.nav__bottom {
+  height: 45%;
   width: 128rem;
   margin: 0 auto;
 }
 
-#navigation .nav__bottom .nav__sns {
+.nav__bottom .nav__sns {
   display: flex;
   align-items: center;
   padding-top: 2rem;
   margin-bottom: 3rem;
 }
 
-#navigation .nav__sns span {
-  font-size: 2.5rem;
+.nav__sns span {
+  font-size: 2.3rem;
   line-height: 2.5rem;
   font-weight: 600;
   margin-right: 4rem;
 }
 
-#navigation .nav__sns--icon {
+.nav__sns--icon {
   display: flex;
   margin-top: 0.5rem;
 }
 
-#navigation .nav__sns--icon li:not(:last-child) {
+.nav__sns--icon li:not(:last-child) {
   margin-right: 1.8rem;
 }
 
-#navigation .nav__sns--icon li:last-child {
+.nav__sns--icon li:last-child {
   margin-left: 0.8rem;
 }
 
-#navigation .nav__sns--icon svg {
+.nav__sns--icon svg {
   width: 2rem;
   height: 2rem;
 }
 
-#navigation .nav__sns--icon svg:hover use {
+.nav__sns--icon svg:hover use {
   fill: var(--color-accent);
 }
 
-#navigation .nav__sns--icon use {
+.nav__sns--icon use {
   fill: var(--color-base);
 }
 
-#navigation .nav__cs .nav__cs--title {
-  font-size: 2.5rem;
+.nav__cs .nav__cs--title {
+  font-size: 2.3rem;
   line-height: 3rem;
   font-weight: 600;
   margin-right: 2rem;
 }
 
-#navigation .nav__cs--number {
-  font-size: 2.2rem;
+.nav__cs--number {
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
-#navigation .nav__cs--operation {
-  font-size: 2rem;
+.nav__cs--operation {
+  font-size: 1.8rem;
   margin-top: 1rem;
 }
 

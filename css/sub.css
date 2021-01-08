@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;900&display=swap");
+
+.sub__content #bread-crumbs {
+  margin-bottom: 7rem;
+}
+
+.sub__content #bread-crumbs .inner {
+  border-top: 1px solid var(--color-base);
+  border-bottom: 1px solid var(--color-base);
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+}
+.sub__content #bread-crumbs ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub__content #bread-crumbs ul li.step::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 0.2rem;
+  background-color: var(--color-base);
+  position: absolute;
+  top: 1.3rem;
+  right: -3.5rem;
+}
+
+.sub__content #bread-crumbs ul li.step:first-child::after {
+  top: 1.6rem;
+}
+
+.sub__content #bread-crumbs ul li {
+  position: relative;
+}
+.sub__content #bread-crumbs .inner > ul li:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.sub__content #bread-crumbs ul li svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(0.5rem);
+  padding-right: 0.8rem;
+}
+
+.sub__content #bread-crumbs ul li use {
+  fill: var(--color-base);
+}
+/*
+.sub__content #bread-crumbs ul .step1 {
+  width: 19rem;
+  height: 6.5rem;
+  background-color: rgba(56, 56, 56, 0.904);
+  -webkit-clip-path: polygon(15% 0, 0 100%, 85% 100%, 100% 0);
+  clip-path: polygon(15% 0, 0 100%, 85% 100%, 100% 0);
+  position: absolute;
+  top: 0;
+  left: 5.8rem;
+}
+/*
+
+.sub__content #bread-crumbs ul .step1::after {
+  content: "\276F";
+  display: block;
+  font-size: 5rem;
+  color: inherit;
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+}*/
+
+/*
+.sub__content #bread-crumbs ul .step1::after,
+.sub__content #bread-crumbs ul .step2::after {
+  content: "";
+  display: block;
+  width: 1.3rem;
+  height: 0.2rem;
+  background-color: var(--color-base);
+  position: absolute;
+  top: 0.5rem;
+  left: -0.5rem;
+}*/
+
+.sub__content #bread-crumbs ul li a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.sub__content #bread-crumbs .depth1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-base);
+  position: relative;
+}
+
+.sub__content #bread-crumbs .currentpage {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.sub__content #bread-crumbs .depth1:hover .depth2 {
+  height: 6rem;
+  opacity: 1;
+}
+
+.sub__content #bread-crumbs .depth1 .depth2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  top: 4.8rem;
+  left: -14.1rem;
+  width: 128rem;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #383838a2;
+  transition: all 0.3s;
+}
+
+.sub__content #bread-crumbs .inner .depth1 .depth2 li {
+  margin: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.sub__content #bread-crumbs .inner .depth1 .depth2 li a {
+  line-height: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.sub__content #bread-crumbs .inner .depth1 .depth2 li:hover a {
+  border-bottom: 1px solid currentColor;
+}
+
+.sub__content .perform__feature {
+  margin-bottom: 14.5rem;
+}
+
+.sub__content .perform__feature .perform__feature-text {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  padding: 0 4rem;
+}
+.sub__content .perform__feature .text-left {
+  width: 65%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sub__content .sub__perform-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.sub__content .sub__perform-name .slide-type {
+  font-size: 1.8rem;
+  height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.sub__content .sub__perform-name .slide-title {
+  font-size: 4.5rem;
+  height: 4rem;
+}
+
+.sub__content .buy-btn {
+  top: 5rem;
+  left: 1.5rem;
+  display: block;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background-color: transparent;
+  transform: translateY(1.5rem);
+
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.sub__content .buy-btn span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  z-index: 400;
+  color: inherit;
+  display: block;
+  width: 8rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub__content .buy-btn::after {
+  content: "";
+  display: block;
+  background-color: var(--color-accent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: transform 0.5s;
+  z-index: 0;
+}
+
+.sub__content .buy-btn:hover:after {
+  transform-origin: 0 100%;
+  transform: scaleY(1);
+}
+
+.sub__content .buy-btn:hover span {
+  color: #fff;
+}
+
+.sub__content .text-right .sub__perform-detail {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8em;
+  position: relative;
+}
+
+.sub__content .text-right .sub__perform-detail li::before {
+  content: "-";
+  display: block;
+  position: absolute;
+  left: -1rem;
+}
+
+#perform__intro {
+  text-align: center;
+}
+
+#perform__intro .inner {
+  background-color: #2a3d4e;
+  margin-top: -14.5rem;
+  padding-top: 14.5rem;
+}
+
+#perform__intro .article--title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 2.3rem;
+  margin-top: 7rem;
+  background-image: linear-gradient(
+    to bottom,
+    #faf3db 0%,
+    #faf3db 80%,
+    #b4b0a6 80%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#perform__intro .article--title span {
+  font-family: "Gothic A1", sans-serif;
+  margin-top: 0.8rem;
+  font-size: 4rem;
+  font-weight: 900;
+  display: block;
+}
+
+#perform__intro .article--title.review {
+  margin-top: -23rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    #faf3db 0%,
+    #faf3db 50%,
+    #b4b0a6 50%
+  );
+  position: relative;
+}
+
+#perform__intro .article--title.review::after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #b4b0a6;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#perform__intro .article--main {
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+#perform__intro .article--main > * {
+  font-family: source-han-serif-korean, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#perform__intro .article--main .review--comment {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+#perform__intro .article--main .reviewer {
+  color: rgb(185, 195, 221);
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+#perform__intro .article--main .reviewer::before,
+#perform__intro .article--main .reviewer::after {
+  content: "-";
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: currentColor;
+  position: absolute;
+  top: 0;
+}
+#perform__intro .article--main .reviewer::before {
+  left: -1rem;
+}
+#perform__intro .article--main .reviewer::after {
+  right: -1rem;
+}
+
+#perform__intro .article--main .reviewer:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+#perform__intro .article--main .reviewer:last-child {
+  margin-bottom: 7rem;
+}
+
+#perform__intro .article--title.schedule {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: inherit;
+  background-image: linear-gradient(
+    to bottom,
+    #faf3db 0%,
+    #faf3db 50%,
+    #b4b0a6 50%
+  );
+}
+
+#perform__intro .article--main .schedule--notice {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+  margin-bottom: 7rem;
+}
+
+/*
+#perform__intro .article--main::before {
+  content: "";
+  background: url(../image/perform__introdeco.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90rem;
+  height: 80rem;
+  z-index: 0;
+}*/
+#perform__intro .article--main span {
+  display: block;
+  font-size: 1.7rem;
+  transform: translateY(-29rem);
+  font-family: source-han-serif-korean, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#perform__intro .article--main2 span {
+  transform: translateY(-30.5rem);
+}
+
+#perform__intro .article--main span:nth-child(2),
+#perform__intro .article--main span:nth-child(4) {
+  margin-bottom: 2rem;
+}
+
+#perform__intro .musical_pic {
+  margin-top: -15rem;
+  margin-bottom: 5rem;
+}
+
+.sub__content #sub__footer {
+  margin-bottom: 8rem;
+}
+
+.sub__content .nav__top .nav__primary--title {
+  margin-bottom: 3rem;
+}
+
+.sub__content .nav__primary--title li {
+  line-height: 2.5rem;
+}
+
+.sub__content .nav__primary--title a {
+  font-size: 3rem;
+}
+
+.sub__content .nav__secondary-menu {
+  padding-top: 1rem;
+}
+
+.sub__content .nav__secondary-menu a {
+  font-size: 2.6rem;
+}
+
+.nav__secondary-menu li::after {
+  /*content: "\2192";
+  display: block;
+  font-size: 3rem;
+  position: absolute;
+  
+  opacity: 0;
+  transition: all 0.3s;*/
+  top: -0.3rem;
+}
+
+.sub__content .nav__secondary-menu li:nth-child(1):after {
+  right: 16rem;
+}
+
+.sub__content .nav__secondary-menu li:nth-child(2):after {
+  right: 15.5rem;
+}
+
+.sub__content .nav__secondary-menu li:nth-child(3):after {
+  right: 14rem;
+}
+
+.sub__content .nav__secondary-menu li:nth-child(4):after {
+  right: 9rem;
+}
+
+.sub__content .nav__sns span {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 500;
+  margin-right: 4rem;
+}
+
+.sub__content .nav__sns--icon {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.sub__content .nav__sns--icon li:not(:last-child) {
+  margin-right: 1.8rem;
+}
+
+.sub__content .nav__sns--icon li:last-child {
+  margin-left: 0.8rem;
+}
+
+.sub__content .nav__sns--icon svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.sub__content .nav__cs .nav__cs--title {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+.sub__content .nav__cs--number {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.sub__content .nav__cs--operation {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sub__content .policy {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.sub__content .policy li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.sub__content .policy li a {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.sub__content .copyright {
+  margin-top: 2rem;
+  display: block;
+  font-size: 1.2rem;
+}

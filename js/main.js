@@ -26,29 +26,6 @@ $(function(){
         });
     })
 
-
-
-        var activeTab = $(".main__slide-tab").find("a.active") 
-        var activeSlideName = activeTab.attr("phref");
-        $(activeSlideName).show();
-
-
-        $('.main__slide-tab a').click(function(){
-            var allSlideName = $("#main .slide-top").find(".main__slide-name");
-
-            var activeSlideName = $(this).attr("phref");
-            var imgLeft = $(this).attr('img-left');
-            
-            allSlideName.hide();
-          
-    
-            $('.main__slide-tab a').removeClass('active')
-            $(this).addClass('active');
-    
-            $('.slide-image').animate({left:imgLeft});
-            $(activeSlideName).show();
-        });
-
         $(".guide__content").each(function(){
 
        
@@ -90,4 +67,6 @@ $(function(){
             sta = 1;
         }
     })
+
+
 })
