@@ -249,6 +249,16 @@
 }
 
 .sub__content .slick-slide .img-box img.active {
+  animation: activeImg 0.8s ease-in-out infinite;
+}
+
+@keyframes activeImg {
+  0% {
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 1px 10px 20px rgba(225, 225, 225);
+  }
 }
 
 .sub__content .slick-slide img {

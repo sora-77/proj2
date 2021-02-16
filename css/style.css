@@ -164,7 +164,7 @@
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
-  transform: translateY(-2rem);
+  transform: translateY(-1rem);
 }
 
 #main .main__slide .main__slide-name .slide-type {
@@ -630,9 +630,19 @@
   cursor: pointer;
   display: grid;
   grid-template-rows: 52.3rem;
-  grid-template-columns: repeat(3, 33.5rem);
+  grid-template-columns: 33.5rem 1fr 33.5rem 1fr 33.5rem;
+}
 
-  grid-gap: 13.8rem;
+#news .content1 {
+  grid-column: 1 / 2;
+}
+
+#news .content2 {
+  grid-column: 3 / 4;
+}
+
+#news .content3 {
+  grid-column: 5 / -1;
 }
 
 #news .news__content-box > * {
